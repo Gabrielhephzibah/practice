@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".HidingElement">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_dark"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I need to hide this on the click of the hide button and show this on the click of the show button"
+            android:textColor="#fff"
+            android:textSize="23dp"
+            android:visibility="invisible"
+            android:layout_marginTop="23dp"
+            android:gravity="center_horizontal"
+
+            />
+
+            <Button
+                android:id="@+id/showBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHOW"
+                android:onClick="showtext"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            />
+
+        <Button
+            android:id="@+id/hideBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HIDE"
+            android:onClick="hidetext"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            />
+
+        <Button
+            android:id="@+id/nextPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT PAGE"
+            android:onClick="hidetext"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
